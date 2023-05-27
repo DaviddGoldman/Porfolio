@@ -1,0 +1,88 @@
+/* Estilos de animaciones e interactividad */
+h1,
+h2,
+h3 {
+  animation: fadeInDown 1s ease forwards;
+  opacity: 0;
+}
+
+p,
+ul {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: -1;
+  pointer-events: none;
+  animation: noise 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 800px -800px;
+  }
+}
+
+.contact-buttons a {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.contact-buttons a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contact-buttons a:hover {
+  background-color: #555555;
+}
+
+.contact-buttons a:hover::after {
+  opacity: 1;
+}
