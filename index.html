@@ -2,86 +2,117 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>David Goldman - Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>David Goldman - CV</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
       <h1>David Goldman</h1>
-      <p>Desarrollador Web</p>
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#education">Educación</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="section animated">
-      <h2 class="section-title">Sobre mí</h2>
-      <p class="section-content">
-        Soy un apasionado desarrollador web con experiencia en JavaScript, React.js y programación backend. Me gusta combinar habilidades técnicas con conocimientos de diseño gráfico y edición de fotos y videos. También tengo experiencia en finanzas e inversiones, lo que me ha dado una visión integral en el desarrollo de proyectos. Mi objetivo es crear soluciones innovadoras y de calidad que aporten valor a los usuarios.
-      </p>
+    <section id="about">
+      <div class="content">
+        <h2>Sobre mí</h2>
+        <p>  Soy David Goldman, un apasionado del mundo digital y la computación desde una edad temprana. Desde que tuve acceso a mi primera computadora, mi curiosidad me ha impulsado a explorar diferentes áreas del campo tecnológico y adquirir conocimientos en diversas disciplinas.
+            <br><br>
+            Mi trayectoria abarca desde finanzas e inversiones, donde he estudiado de forma autodidacta en diversas academias, hasta el desarrollo de habilidades en programación, edición de videos y fotos, e incluso un interés por la creación de videojuegos y contenido digital. A lo largo de mi recorrido, he desarrollado una pasión por el aprendizaje constante y el deseo de superarme.
+            <br><br>
+            Actualmente, me encuentro enfocado en el desarrollo web y el diseño, especializándome en tecnologías como JavaScript, React.js y el desarrollo Full Stack. Mi formación académica en Licenciatura en Computación en la UNC (FAMAF) me ha brindado una base sólida en los fundamentos de la programación y el análisis de algoritmos.
+            <br><br>
+            Además de mis habilidades técnicas, poseo un don para la enseñanza y disfruto compartiendo mis conocimientos con otros. Mi naturaleza social me lleva a buscar oportunidades para conectarme con personas que compartan la misma pasión por el progreso y el crecimiento.
+            <br><br>
+            Soy una persona comprometida, curiosa y orientada al logro de metas. Siempre estoy buscando nuevas formas de innovar y crear un impacto positivo en la comunidad tecnológica.
+            <br><br>
+            Estoy entusiasmado por las oportunidades que el mundo digital ofrece y ansío desafiantes proyectos donde pueda aplicar mis habilidades y conocimientos para seguir creciendo y contribuyendo al desarrollo de soluciones innovadoras.</p>
+      </div>
     </section>
 
-    <section class="section animated">
-      <h2 class="section-title">Habilidades</h2>
-      <div class="skills">
-        <div class="skill">
-          <img src="path/to/html-icon.png" alt="HTML">
-          <h3 class="skill-title">HTML</h3>
-        </div>
-        <div class="skill">
-          <img src="path/to/css-icon.png" alt="CSS">
-          <h3 class="skill-title">CSS</h3>
-        </div>
-        <div class="skill">
-          <img src="path/to/js-icon.png" alt="JavaScript">
-          <h3 class="skill-title">JavaScript</h3>
-        </div>
-        <div class="skill">
-          <img src="path/to/react-icon.png" alt="React.js">
-          <h3 class="skill-title">React.js</h3>
+    <section id="experience">
+      <div class="content">
+        <h2>Experiencia</h2>
+        <div class="experience-item">
+          <h3>Desarrollador Full Stack - Proyecto de Práctica - Coderhouse - 25 de agosto 2022</h3>
+          <ul>
+            <li>Participé en un curso intensivo de desarrollo Full Stack, adquiriendo conocimientos sólidos en desarrollo web, JavaScript y programación backend.</li>
+            <li>Trabajé en proyectos prácticos utilizando HTML, CSS, Node, JavaScript, Github, Git y otras tecnologías relevantes.</li>
+            <li>Colaboré en equipos multidisciplinarios para la implementación de soluciones web eficientes.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section animated">
-      <h2 class="section-title">Proyectos</h2>
-      <div class="projects">
-        <div class="project">
-          <img src="path/to/project1.png" alt="Proyecto 1">
-          <h3 class="project-title">Proyecto 1</h3>
-          <p class="project-description">Descripción del proyecto 1.</p>
-          <a href="#" class="button">Ver más</a>
-        </div>
-        <div class="project">
-          <img src="path/to/project2.png" alt="Proyecto 2">
-          <h3 class="project-title">Proyecto 2</h3>
-          <p class="project-description">Descripción del proyecto 2.</p>
-          <a href="#" class="button">Ver más</a>
-        </div>
+    <section id="skills">
+      <div class="content">
+        <h2>Habilidades</h2>
+        <ul class="skills-list">
+          <li>Desarrollo web: HTML, CSS, JavaScript, React.js</li>
+          <li>Programación backend: Node.js, Express.js</li>
+          <li>Bases de datos: MongoDB, MySQL</li>
+          <li>Herramientas de control de versiones: Git, GitHub</li>
+          <li>Diseño gráfico: Adobe Photoshop, Adobe Illustrator, Canva</li>
+          <li>Edición de fotos y videos: Adobe Lightroom, Adobe Premiere Pro, Sony Vegas</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section animated">
-      <h2 class="section-title">Contacto</h2>
-      <form class="contact-form">
-        <input type="text" class="contact-input" placeholder="Nombre">
-        <input type="email" class="contact-input" placeholder="Email">
-        <textarea class="contact-textarea" placeholder="Mensaje"></textarea>
-        <input type="submit" value="Enviar" class="contact-button">
-      </form>
+    <section id="education">
+      <div class="content">
+        <h2>Educación</h2>
+        <p>Licenciatura en Computación - Universidad Nacional de Córdoba (FAMAF) - Actualidad</p>
+      </div>
     </section>
 
-    <footer>
-      <p>© 2023 David Goldman</p>
-    </footer>
-  </div> <!-- Cierre del contenedor -->
+    <section id="projects">
+        <h2 class="section-title">Proyectos en GitHub</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <h3 class="project-title">Proyecto 1</h3>
+            <p class="project-description">Descripción del proyecto 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="https://github.com/tu_usuario/proyecto1" class="project-link">Ver en GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">Proyecto 2</h3>
+            <p class="project-description">Descripción del proyecto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="https://github.com/tu_usuario/proyecto2" class="project-link">Ver en GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">Proyecto 3</h3>
+            <p class="project-description">Descripción del proyecto 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="https://github.com/tu_usuario/proyecto3" class="project-link">Ver en GitHub</a>
+          </div>
+        </div>
+      </section>
+      
 
-  <!-- Agrega enlaces a los archivos de imagen que se utilizarán, reemplaza "path/to/" con la ruta correcta -->
-  <img src="html-icon.png" alt="HTML">
-  <img src="path/to/css-icon.png" alt="CSS">
-  <img src="path/to/js-icon.png" alt="JavaScript">
-  <img src="path/to/react-icon.png" alt="React.js">
-  <img src="path/to/project1.png" alt="Proyecto 1">
-  <img src="path/to/project2.png" alt="Proyecto 2">
-  
-  </body>
-  </html>
-  
+    <section id="contact">
+      <div class="content">
+        <h2>Contacto</h2>
+        <p>¡No dudes en contactarme! Puedes hacerlo a través de los siguientes medios:</p>
+        <div class="contact-buttons">
+        <a href="https://wa.me/5493837695233" class="whatsapp-button">WhatsApp</a>
+        <a href="https://www.instagram.com/tu_usuario" class="instagram-button">Instagram</a>
+        <a href="mailto:daviddgold12@gmail.com" class="gmail-button">Gmail</a>
+        <a href="" class="github-button">GitHub</a>
+        </div>
+        </div>
+        </section>
+        <footer>
+            <div class="content">
+              <p>© 2023 David Goldman. Todos los derechos reservados.</p>
+            </div>
+          </footer>
+        </div> <!-- Cierre del contenedor -->
+        <script src="script.js" defer></script>
+      </body>
+      </html>
