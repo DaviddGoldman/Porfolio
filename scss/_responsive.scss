@@ -32,3 +32,60 @@
       margin: 10px 0;
     }
   }
+
+  /* Media queries para dispositivos de iPhone 11 en adelante */
+@media only screen 
+and (device-width: 414px)  /* iPhone 11 Pro, X, XS */
+and (device-height: 896px)
+and (-webkit-device-pixel-ratio: 2)
+and (orientation: portrait),
+
+only screen 
+and (device-width: 414px)  /* iPhone 11 Pro Max, XS Max */
+and (device-height: 896px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait),
+
+only screen 
+and (device-width: 375px)  /* iPhone 11, XR */
+and (device-height: 812px)
+and (-webkit-device-pixel-ratio: 2)
+and (orientation: portrait),
+
+only screen 
+and (device-width: 414px)  /* iPhone 12, 12 Pro */
+and (device-height: 844px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait),
+
+only screen 
+and (device-width: 390px)  /* iPhone 12 Mini */
+and (device-height: 844px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait),
+
+only screen 
+and (device-width: 428px)  /* iPhone 12 Pro Max */
+and (device-height: 926px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait) {
+
+/* Aquí colocas los estilos específicos para dispositivos iPhone 11 en adelante */
+.profile-picture {
+  float: none;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#about p {
+  text-align: left;
+  margin-left: 0;
+  margin-top: 20px;
+}
+}
